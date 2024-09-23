@@ -33,5 +33,5 @@ You can use python train.py --help for any help
 ## Testing
 ```bash
 python test.py --test_path "datasets/<dataset-folder-name>/processed/test" \
-               --ckpt "results/<dataset-name>/checkpoints/<checkpoint-file-name>.pth"
+               --ckpt "results/<dataset-name>/checkpoints/<checkpoint-file-name>.pth" --dilation_pixels "<no of pixels to dilate>"
 
