@@ -14,7 +14,7 @@ The code should work with other versions of the above tools, but these were used
 
 To preprocess the data, run the following command:
 
-'''bash
+```bash
 python data_aug.py --dataset <dataset-folder-name>
 
 
