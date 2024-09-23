@@ -1,4 +1,4 @@
-# Automated-Needle-Segmentation-in-Ultrasound-Guided-Biopsy
+# Automated Needle Segmentation in Ultrasound-Guided Biopsy
 
 This repository contains a U-Net implementation for image segmentation tasks, built using PyTorch.
 
@@ -11,7 +11,12 @@ This repository contains a U-Net implementation for image segmentation tasks, bu
 The code should work with other versions of the above tools, but these were used during testing.
 
 ## Data Preprocessing
--python data_aug.py --dataset <dataset-folder-name>
+
+To preprocess the data, run the following command:
+
+'''bash
+python data_aug.py --dataset <dataset-folder-name>
+
 
 ## Training
 To train the model:
