@@ -16,21 +16,22 @@ To preprocess the data, run the following command:
 
 ```bash
 python data_aug.py --dataset <dataset-folder-name>
-
-
+```
 ## Training
 To train the model:
 Place your dataset (both images and masks) in datasets/<your-folder-name>.
 Run the data augmentation script to resize and process the dataset.
 Train the model by running:
+```bash
 python train.py --train_path "datasets/<dataset-folder-name>/processed/train" \
                 --val_path "datasets/<dataset-folder-name>/processed/val" \
                 --dataset "<dataset-name>" --dilation_pixels "<no of pixels to dilate>"
 
 You can use python train.py --help for any help
-
+```
 
 ## Testing
+```bash
 python test.py --test_path "datasets/<dataset-folder-name>/processed/test" \
                --ckpt "results/<dataset-name>/checkpoints/<checkpoint-file-name>.pth"
 
